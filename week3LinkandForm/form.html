@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h3>Form Elements</h3>
+    <form action="https://www.example.com">
+        <label for="Name">Name : </label>
+        <input type="text"   /ประเภทของกล่อง
+               name="Name"   /ชื่อกล่อง
+               size="20"   /ขนาดกล่อง
+               maxlength="30"  /ขนาดของข้อความ
+               value=""   /ข้อความที่_fic_ภายในกล่อง 
+               placeholder="name"  /ข้อความอธิบายภายในกล่อง>
+    </form>
+
+    <br>
+    
+    <form action="https://www.example.com">
+        <label for="Email">Email : </label>
+        <input type="email" 
+               name="Email"  
+               size="20" 
+               maxlength="30"
+               value="" 
+               placeholder="email" >
+    </form>
+    
+    <br>
+    
+    <form action="https://www.example.com" method="post" /get_ใช้สำหรับข้อมูลที่ไม่ได้เป็นความลับ_เปิดเผยได้ 
+    /แต่post_ใช้กับข้อมูลที่เป็นความลับ>
+        <label for="password">Password : </label>
+        <input type="password" 
+               name="Password"  
+               size="20" 
+               maxlength="30"
+               value="" 
+               placeholder="password" >
+    </form>
+    
+    <br>
+    
+    <label for="address">Address : </label>
+    
+    <br>
+    
+    <textarea name="address" cols="30" rows="3">74/2 ม.7 ต.ย่านยาว อ.คีรีรัฐนิคม จ.สุราษฎร์ธานี 84180</textarea>
+    
+    <br><br>
+    
+    <label for="gender">Gender : </label>
+    <input type="radio" name="gender" value="M" /nameต้องตั้งชื่อเหมือนกันถ้าต้องการให้เลือกได้ตัวเดียว /> Male 
+    <input type="radio" name="gender" value="F" /> Female
+    <input type="radio" name="gender" value="L" /> LGBT+
+    
+    <br><br>
+    
+    <label for="source">Source : </label>
+    <input type="checkbox" name="friend" /checked_ใส่ไว้เพื่อล็อคค่าที่จะต้องเลือกเอาไว้ก่อน> Friend
+    <input type="checkbox" name="facebook"> Facebook
+    <input type="checkbox" name="internet"> Internet
+    <input type="checkbox" name="tiktok"> Tiktok
+    
+    <br><br>
+
+    <label for="department">Department : </label>
+    <select name="dept">
+        <option value="1">IT</option>
+        <option value="2">Chemistry</option>
+        <option value="3">Engineer</option>
+        <option value="4">Enviroment</option>
+    </select>
+
+    <br><br>
+
+    <label for="profile">Profile</label>
+    <input type="file" name="profilepic" id="">
+
+    <br><br>
+    
+    <input type="submit" value="ลงทะเบียน">
+    <input type="reset" value="ยกเลิก">
+</body>
+</html>
