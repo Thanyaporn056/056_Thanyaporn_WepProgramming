@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        h1{ 
+            width: 450px; /*width_ใช้สำหรับกำหนดความกว้างของกล่อง*/
+            padding:  10px; /*padding_ใช้สำหรับเว้นระห่างระหว่างข้อความกับขอบ_ไปด้านบน_ขวา_ล่าง_ซ้าย__ขยายกล่องไม่ได้เลื่อนข้อความ*/
+            border: 4px solid blue; /*ใช้สำหรับกำหนดขอบของกล่อง_ตัวที่1ความหนาของสี_ตัวที่2ลักษณะเส้น_ตัวที่3สีของเส้น*/
+            margin: 30px; /*ใช้สำหรับเว้นระยะระหว่างกล่องกับของเว็บ_มี4ด้านเหมือนกัน*/
+            background-color: aqua;
+        }
+        p{
+            width: 450px;
+            background-color: lightpink;
+        }
+        span{
+            background-color: blueviolet;
+        }
+        .div1{
+            width: 300px;
+            margin-bottom: 15px; /*ใช้-เพื่อกำหนดค่าแค่ด้านใดด้านนึง_ถ้าไม่เท่ากันกำหนดทีละด้าน*/
+            background-color: lightcoral;
+            border: 5px solid black;
+            border-radius: 25px; /*กำหนดให้ขอบของกล่องโค้ง*/
+        }
+        .div2{
+            width: 300px;
+            background-color: green;
+            border: 5px solid blue;
+            padding: 20px;
+        }
+        li{
+            display: inline; /*กำหนดการขึ้นบรรทัดใหม่ของข้อความ แสดงว่าจาก Box ให้เป็น inline*/
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Box Model</h1>
+    <p>Lorem <span /*span_ใช้สำหรับเน้นข้อความบางจุดให้ต่างจากจุดอื่น*/> ipsum dolor </span> sit amet consectetur adipisicing elit. Voluptatibus nemo nam ipsa quis itaque maiores officiis laborum 
+        corporis veniam! Perspiciatis quia ullam cumque consequatur. Numquam fugiat sapiente maiores reprehenderit esse? Amet accusantium 
+        necessitatibus, mollitia neque modi officia sequi praesentium? Labore earum a laudantium culpa delectus! Aut possimus soluta 
+        corrupti consectetur impedit, totam dolorem, ad perferendis adipisci fugiat ipsa aliquam officia.
+    </p>
+    <div class="div1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus deleniti, atque libero quas saepe, non enim voluptatem ipsa 
+        amet nobis at impedit voluptatum consequatur laudantium eos tempore accusamus quibusdam ipsam!Similique fugiat pariatur, repellat 
+        eum vel cupiditate earum corrupti expedita necessitatibus maiores eius eaque sit dignissimos fuga ratione adipisci animi autem eligendi 
+        excepturi dolores illum. Porro ipsam accusantium a ex.
+    </div>
+    <br>
+    <div class="div2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus deleniti, atque libero quas saepe, non enim voluptatem ipsa 
+        amet nobis at impedit voluptatum consequatur laudantium eos tempore accusamus quibusdam ipsam!Similique fugiat pariatur, repellat 
+        eum vel cupiditate earum corrupti expedita necessitatibus maiores eius eaque sit dignissimos fuga ratione adipisci animi autem eligendi 
+        excepturi dolores illum. Porro ipsam accusantium a ex.
+    </div>
+    <br>
+    <ul>
+        <li>Box Model</li>
+        <li>Page layout</li>
+    </ul>
+</body>
+</html>

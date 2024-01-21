@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Page layout</title>
+    <style>
+        .news {
+            width: 300px;
+            border: 2px solid #bc8f8f;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .news2{
+            position: relative; /*ใช้ในการย้ายตำแหน่งของกล่อง relative คือการกำหนดตำแหน่งของกล่องที่อยู่ภายในบอดี้แม่(หน้าเว็บ)จากตำแหน่งปัจจุบันที่อยู่ มีทั้งหมด 4*/ 
+            top: 10px; /*ค่าที่กำหนดสามารถติดลบได้*/
+            left: 100px;
+            width: 300px;
+            border: 2px solid #bc8f8f;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .read{
+            width: 100px;
+            background-color: #bc8f8f;
+            color: black;
+            padding: 10px;
+            position: absolute; /*absolute ใช้สำหรับย้ายตำแหน่งที่อยู่ในกล่องแม่ยอย ตัวแม่จะต้องเป็น relative*/
+            right: 5px;
+            top: 2px;
+        }
+        .footer{
+            text-align: center;
+        }
+        .promotion{
+            font-size: 65px;
+            color: white;
+            background-color: red;
+            width: 350px;
+            text-align: center;
+            position: fixed; /*fixed ใช้กำหนดตัวกล่องติดกับหน้าเว็บ ถ้าเลื่อนสกอบาร์จะไม่เลื่อนตามเหมือนตัวอื่น*/
+            top: 2px;
+            right: 3px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="promotion">Promotion</div>
+    <div class="news"><h1>News1</h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde aperiam enim excepturi ipsum est. 
+        Dignissimos velit cum nobis fugiat facilis inventore saepe quidem vero a nesciunt, pariatur 
+        doloribus unde nisi.
+        
+        <div class="raed">Read</div>
+
+    </div>
+
+    <div class="news2"><h1>News2</h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quam reprehenderit laborum 
+        molestias quia unde voluptatem, corporis ab ut ipsam aliquid necessitatibus amet alias modi tempore! 
+        Aperiam asperiores accusantium perferendis.
+    </div>
+
+    <p class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta debitis maiores, sint distinctio obcaecati assumenda 
+        nobis delectus, eaque accusamus sequi tempore deleniti similique in ab animi rerum, dolor minima.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellat ratione esse ipsum doloribus expedita ullam fuga. Consectetur recusandae 
+    dolorum reiciendis debitis accusantium, vitae nihil incidunt perspiciatis iste odit earum!Consequuntur, maiores molestiae sed voluptas repellendus 
+    deserunt expedita ea magni animi dignissimos voluptatem repellat doloribus at, dolorum nulla accusantium doloremque rem totam ipsam neque. Totam 
+    blanditiis ducimus recusandae pariatur voluptatem.Aspernatur nobis repudiandae quaerat modi cumque sunt libero nisi neque dignissimos similique 
+    autem doloribus placeat nam eum, necessitatibus perspiciatis. Odio ad tenetur, consequatur praesentium mollitia voluptatibus corrupti sapiente 
+    eaque error? Aspernatur a ad sint incidunt neque sit tempora beatae facere impedit nisi fuga cumque provident, rerum, omnis praesentium possimus 
+    ut non, enim assumenda! Consequatur tenetur rerum, accusamus aliquam mollitia perferendis!Id harum sapiente labore laudantium, reiciendis blanditiis 
+    molestias vitae, non mollitia maxime expedita quae cum debitis. Debitis veritatis repudiandae quis nostrum, consequatur officia quasi! Qui tenetur 
+    quo accusamus quidem reiciendis.
+</p>
+</body>
+</html>

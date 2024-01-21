@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Lemon&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        .c1, .c2, .c3{
+            width: 300px;
+            border: 5px double;
+            padding: 15px;
+            margin: 5px;
+            float: left; /*float ทำให้กล่องเรียงกันแนวนอน โดยสามารถกำหนดได้ว่าจะให้ติดซ้ายหรือขวา เรียงลำดับจากกล่องที่มาก่อน จะมีปัญหาเมื่อขนาดของกล่องไม่เท่ากัน*/
+            /*clear: both; เคลียร์ทั้งซ้ายและขวา มีแค่ตัวกล่อแค่กล่องเดียวในบรรทัดนั้น*/
+            /*clear: left; เคลียร์ทางฝั่งซ้ายไม่ให้มีใครมาก่อน ตัวเองมาก่อนเท่านั้น*/
+            /*clear: right; เคลียร์ทางด้านขวา ไม่ให้มีใครมาต่อท้าย*/
+        }
+        .c1{
+            background-color: #dda0dd;
+            font-family: 'Lemon', serif;
+            clear: left;
+
+        }
+        .c2{
+            background-color: #6b8f23;
+            font-family: 'Permanent Marker', cursive;
+        }
+        .c3{
+            background-color: #696969;
+            font-family: 'Concert One', sans-serif;
+            clear: right;
+        }.clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ab suscipit quas corporis 
+        magnam, officiis totam. Ex autem necessitatibus ut placeat, aperiam sit tenetur consequatur a 
+        sequi ullam perferendis soluta!</div>
+    <div class="c2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero officia amet nam fugit ratione 
+        quos laborum hic ut ea laboriosam nobis, obcaecati, expedita nisi molestiae! Tempore voluptatibus 
+        aspernatur molestiae est.</div>
+    <div class="c3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium molestiae quibusdam labore 
+        rerum, illo alias quae, recusandae vel repellat iure exercitationem perspiciatis. Tempora facilis 
+        laborum omnis quas odit sunt voluptates!</div>
+    <div class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ab suscipit quas corporis 
+        magnam, officiis totam. Ex autem necessitatibus ut placeat, aperiam sit tenetur consequatur a 
+        sequi ullam perferendis soluta!</div>
+    <div class="c2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero officia amet nam fugit ratione 
+        quos laborum hic ut ea laboriosam nobis, obcaecati, expedita nisi molestiae! Tempore voluptatibus 
+        aspernatur molestiae est.</div>
+    <div class="c3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium molestiae quibusdam labore 
+        rerum, illo alias quae, recusandae vel repellat iure exercitationem perspiciatis. Tempora facilis 
+        laborum omnis quas odit sunt voluptates!</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae, distinctio inventore voluptate, 
+        natus adipisci at fugit quaerat, numquam sequi suscipit. Dolores quia mollitia tenetur laborum culpa. Minus, 
+        exercitationem officia?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae, distinctio inventore voluptate, 
+        natus adipisci at fugit quaerat, numquam sequi suscipit. Dolores quia mollitia tenetur laborum culpa. Minus, 
+        exercitationem officia?</p>
+
+    <div class="clear">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae, distinctio inventore voluptate, 
+        natus adipisci at fugit quaerat, numquam sequi suscipit. Dolores quia mollitia tenetur laborum culpa. Minus, 
+        exercitationem officia?</p>
+    </div>
+</body>
+</html>
